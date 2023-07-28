@@ -66,30 +66,6 @@ import {
                   <Label for="exampleText">3. Description</Label>
                   <Input id="exampleText" name="text" type="textarea" />
                 </FormGroup>
-                {/* <FormGroup tag="fieldset">
-                  <legend>Radio Buttons</legend>
-                  <FormGroup check>
-                    <Input name="radio1" type="radio" />{" "}
-                    <Label check className="form-label">
-                      Option one is this and that—be sure to include why it's
-                      great
-                    </Label>
-                  </FormGroup>
-                  <FormGroup check>
-                    <Input name="radio1" type="radio" />{" "}
-                    <Label check className="form-label">
-                      Option two can be something else and selecting it will
-                      deselect option one
-                    </Label>
-                  </FormGroup>
-                  <FormGroup check disabled>
-                    <Input disabled name="radio1" type="radio" />{" "}
-                    <Label check>Option three is disabled</Label>
-                  </FormGroup>
-                </FormGroup>
-                <FormGroup check className="form-label">
-                  <Input type="checkbox" /> <Label check>Check me out</Label>
-                </FormGroup> */}
                 <Button type="button" className="mt-2" onClick={Next} disabled={ Vaild_input }>Next</Button>
               </Form>
             </CardBody>

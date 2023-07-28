@@ -9,51 +9,6 @@ const navigation = [
     icon: "bi bi-speedometer2",
   },
   {
-    title: "Alerts",
-    href: "/alerts",
-    icon: "bi bi-bell",
-  },
-  // {
-  //   title: "Badges",
-  //   href: "/badges",
-  //   icon: "bi bi-patch-check",
-  // },
-  // {
-  //   title: "Buttons",
-  //   href: "/buttons",
-  //   icon: "bi bi-hdd-stack",
-  // },
-  // {
-  //   title: "Cards",
-  //   href: "/cards",
-  //   icon: "bi bi-card-text",
-  // },
-  // {
-  //   title: "Grid",
-  //   href: "/grid",
-  //   icon: "bi bi-columns",
-  // },
-  // {
-  //   title: "Table",
-  //   href: "/table",
-  //   icon: "bi bi-layout-split",
-  // },
-  // {
-  //   title: "Forms",
-  //   href: "/forms",
-  //   icon: "bi bi-textarea-resize",
-  // },
-  // {
-  //   title: "Breadcrumbs",
-  //   href: "/breadcrumbs",
-  //   icon: "bi bi-link",
-  // },
-  {
-    title: "About",
-    href: "/about",
-    icon: "bi bi-people",
-  },
-  {
     title: "Workflows",
     href: "/workflows",
     icon: "bi bi-bezier2",
@@ -61,6 +16,7 @@ const navigation = [
 ];
 
 const Sidebar = () => {
+
   const showMobilemenu = () => {
     document.getElementById("sidebarArea").classList.toggle("showSidebar")
     ;
@@ -89,7 +45,7 @@ const Sidebar = () => {
               <Link
                 to={navi.href}
                 className={
-                  location.pathname === navi.href
+                  location.pathname.split('/')[1] === navi.href.split('/')[1]
                     ? "text-primary nav-link py-3"
                     : "nav-link text-secondary py-3"
                 }
@@ -104,5 +60,4 @@ const Sidebar = () => {
     </div>
   );
 };
-
 export default Sidebar;
