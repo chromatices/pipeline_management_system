@@ -3,17 +3,17 @@ import { Card, CardBody, CardTitle, CardSubtitle, Table , Button} from "reactstr
 
 const tableData = [
   {
-    project: "MNIST Example",
+    name: "MNIST Example",
     status: "pending",
     weeks: "35h",
   },
   {
-    project: "ChatGPT Deployment",
+    name: "ChatGPT Deployment",
     status: "done",
     weeks: "12h",
   },
   {
-    project: "[Bert] Review Data Analysis",
+    name: "[Bert] Review Data Analysis",
     status: "holt",
     weeks: "1m",
   },
@@ -31,7 +31,7 @@ const WorkflowTable = () => {
           <Table className="no-wrap mt-3 align-middle" responsive borderless>
             <thead>
               <tr>
-                <th>Project</th>
+                <th>Pipeline Name</th>
                 <th>Status</th>
                 <th>Times</th>
 
@@ -41,7 +41,7 @@ const WorkflowTable = () => {
               {tableData.map((tdata, index) => (
                 <tr key={index} className="border-top">
                   <td>
-                    <h6>{tdata.project}</h6>
+                    <h6>{tdata.name}</h6>
                     </td>
                   <td>
                     {tdata.status === "pending" ? (
