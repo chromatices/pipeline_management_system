@@ -1,10 +1,16 @@
 import { Col, Row } from "reactstrap";
-import Feeds from "../components/dashboard/Feeds";
-import SalesChart from "../components/dashboard/SalesChart";
 import PipelineTable from "../components/dashboard/WorkflowTable";
-import { Card, CardBody} from "reactstrap";
+import { Card, CardBody, CardSubtitle} from "reactstrap";
 
 const Starter = () => {
+  // const ArgoWorkflowComponent = () => {
+  //   return (
+  //     <div>
+  //       <iframe src="https://10.0.1.102:30100/workflows" width="100%" height="600" />
+  //     </div>
+  //   );
+  // };
+
   return (
     <div>
       {/***Sales & Feed***/}
@@ -12,8 +18,8 @@ const Starter = () => {
         <Col lg="12"> 
         <div>
           <Card>
-            <CardBody>
-              test
+            <CardBody tag="h5">
+              Pipeline Management System
             </CardBody>
           </Card>
         </div>
@@ -24,6 +30,11 @@ const Starter = () => {
           <PipelineTable />
         </Col>
       </Row>     
+      <Row>
+        <Col lg="14">
+          {/* <ArgoWorkflowComponent /> */}
+        </Col>
+      </Row>
     </div>
   );
 };
