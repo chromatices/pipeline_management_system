@@ -1,5 +1,7 @@
 import { Col, Row } from "reactstrap";
-import PipelineTable from "../components/dashboard/WorkflowTable";
+// import PipelineTable from "../components/dashboard/WorkflowTable";
+import WorkflowInfo from "../components/dashboard/NewWorkflowTable";
+// import ArgoComponent from "./ui/get_argo_status";
 import { Card, CardBody, CardSubtitle} from "reactstrap";
 
 const Starter = () => {
@@ -27,12 +29,13 @@ const Starter = () => {
       </Row>
       <Row>
         <Col lg="12">
-          <PipelineTable />
+          {/* <PipelineTable /> */}
+          <WorkflowInfo />
         </Col>
       </Row>     
       <Row>
         <Col lg="14">
-          {/* <ArgoWorkflowComponent /> */}
+          {/* <ArgoComponent /> */}
         </Col>
       </Row>
     </div>

@@ -1,5 +1,7 @@
 // import {Link} from "react-router-dom";
 import PipelineTable from "../../components/dashboard/WorkflowTable";
+import WorkflowInfo from "../../components/dashboard/NewWorkflowTable";
+
 import { Row, Col, Table, Card, CardTitle, CardBody} from "reactstrap";
 
 /***** Pages ****/
@@ -14,7 +16,8 @@ const Tables = () => {
       {/* table-1*/}
       {/* --------------------------------------------------------------------------------*/}
       <Col lg="12">
-        <PipelineTable />
+        {/* <PipelineTable /> */}
+        <WorkflowInfo/>
       </Col>
       {/* --------------------------------------------------------------------------------*/}
       {/* table-2*/}

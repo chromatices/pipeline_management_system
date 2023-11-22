@@ -1,21 +1,22 @@
 import { Link } from 'react-router-dom'
 import { Card, CardBody, CardTitle, CardSubtitle, Table , Button} from "reactstrap";
 
+
 const tableData = [
   {
     name: "MNIST Example",
     status: "pending",
-    weeks: "35h",
+    duration: "35h",
   },
   {
     name: "ChatGPT Deployment",
-    status: "done",
-    weeks: "12h",
+    status: "Succeed",
+    duration: "12h",
   },
   {
     name: "[Bert] Review Data Analysis",
-    status: "holt",
-    weeks: "1m",
+    status: "Running",
+    duration: "1m",
   },
 ];
 
@@ -33,7 +34,7 @@ const WorkflowTable = () => {
               <tr>
                 <th>Pipeline Name</th>
                 <th>Status</th>
-                <th>Times</th>
+                <th>Duration</th>
 
               </tr>
             </thead>
@@ -44,16 +45,16 @@ const WorkflowTable = () => {
                     <h6>{tdata.name}</h6>
                     </td>
                   <td>
-                    {tdata.status === "pending" ? (
-                      <span className="p-2 bg-danger rounded-circle d-inline-block ms-3"></span>
-                    ) : tdata.status === "holt" ? (
+                    {tdata.status === "Succeed" ? (
+                      <span className="p-2 bg-success rounded-circle d-inline-block ms-3"></span>
+                    ) : tdata.status === "Running" ? (
                       <span className="p-2 bg-warning rounded-circle d-inline-block ms-3"></span>
                     ) : (
-                      <span className="p-2 bg-success rounded-circle d-inline-block ms-3"></span>
+                      <span className="p-2 bg-danger rounded-circle d-inline-block ms-3"></span>
                     )}
                   </td>
                   <td>
-                    <h6>{tdata.weeks}</h6>
+                    <h6>{tdata.duration}</h6>
                   </td>
                 </tr>
               ))}
