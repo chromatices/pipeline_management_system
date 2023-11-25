@@ -1,44 +1,43 @@
 import { Col, Row } from "reactstrap";
-import Feeds from "../components/dashboard/Feeds";
-import SalesChart from "../components/dashboard/SalesChart";
-import PipelineTable from "../components/dashboard/WorkflowTable";
-import { Card, CardBody} from "reactstrap";
-
-
+// import PipelineTable from "../components/dashboard/WorkflowTable";
+import WorkflowInfo from "../components/dashboard/NewWorkflowTable";
+// import ArgoComponent from "./ui/get_argo_status";
+import { Card, CardBody, CardSubtitle} from "reactstrap";
 
 const Starter = () => {
+  // const ArgoWorkflowComponent = () => {
+  //   return (
+  //     <div>
+  //       <iframe src="https://10.0.1.102:30100/workflows" width="100%" height="600" />
+  //     </div>
+  //   );
+  // };
+
   return (
     <div>
-      
       {/***Sales & Feed***/}
       <Row>
         <Col lg="12"> 
         <div>
           <Card>
-            <CardBody>
-              test
+            <CardBody tag="h5">
+              Pipeline Management System
             </CardBody>
           </Card>
         </div>
         </Col>
       </Row>
-
       <Row>
         <Col lg="12">
-          <PipelineTable />
+          {/* <PipelineTable /> */}
+          <WorkflowInfo />
         </Col>
-      </Row>
-      
+      </Row>     
       <Row>
-        <Col sm="6" lg="6" xl="7" xxl="8">
-          <SalesChart />
-        </Col>
-        <Col sm="6" lg="6" xl="5" xxl="4">
-          <Feeds />
+        <Col lg="14">
+          {/* <ArgoComponent /> */}
         </Col>
       </Row>
-      {/***Table ***/}
-      
     </div>
   );
 };

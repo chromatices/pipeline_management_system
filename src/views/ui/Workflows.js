@@ -1,18 +1,23 @@
 // import {Link} from "react-router-dom";
 import PipelineTable from "../../components/dashboard/WorkflowTable";
+import WorkflowInfo from "../../components/dashboard/NewWorkflowTable";
+
 import { Row, Col, Table, Card, CardTitle, CardBody} from "reactstrap";
 
 /***** Pages ****/
 
 /***** Main****/
 const Tables = () => {
+  
+  
   return (
     <Row>
       {/* --------------------------------------------------------------------------------*/}
       {/* table-1*/}
       {/* --------------------------------------------------------------------------------*/}
       <Col lg="12">
-        <PipelineTable />
+        {/* <PipelineTable /> */}
+        <WorkflowInfo/>
       </Col>
       {/* --------------------------------------------------------------------------------*/}
       {/* table-2*/}
@@ -22,7 +27,8 @@ const Tables = () => {
       {/* table-3*/}
       {/* --------------------------------------------------------------------------------*/}
       <Col lg="12">
-        <Card>
+        {/* <ArgoWorkflowComponent /> */}
+        {/* <Card>
           <CardTitle tag="h6" className="border-bottom p-3 mb-0">
             <i className="bi bi-card-text me-2"> </i>
             Table with Striped
@@ -59,7 +65,7 @@ const Tables = () => {
               </tbody>
             </Table>
           </CardBody>
-        </Card>
+        </Card> */}
       </Col>
       {/* --------------------------------------------------------------------------------*/}
       {/* table-3*/}

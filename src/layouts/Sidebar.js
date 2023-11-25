@@ -1,6 +1,6 @@
 import Logo from "./Logo";
 import { Button, Nav, NavItem } from "reactstrap";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const navigation = [
   {
@@ -42,7 +42,7 @@ const Sidebar = () => {
         <Nav vertical className="sidebarNav">
           {navigation.map((navi, index) => (
             <NavItem key={index} className="sidenav-bg">
-              <Link
+              <NavLink
                 to={navi.href}
                 className={
                   location.pathname.split('/')[1] === navi.href.split('/')[1]
@@ -52,7 +52,7 @@ const Sidebar = () => {
               >
                 <i className={navi.icon}></i>
                 <span className="ms-3 d-inline-block">{navi.title}</span>
-              </Link>
+              </NavLink>
             </NavItem>
           ))}
         </Nav>

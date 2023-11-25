@@ -47,7 +47,7 @@ import {
                   <Label for="File">1. Upload Pipeline</Label>
                   <Input id="File" type="File" onChange={handleFileChange} accept=".yaml" />
                   <FormText>
-                    Choose your pipeline file. (yaml, zip, 7z... etc)
+                    Upload your pipeline yaml file.
                   </FormText>
                 </FormGroup>
 

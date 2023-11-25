@@ -1,21 +1,22 @@
 import { Link } from 'react-router-dom'
 import { Card, CardBody, CardTitle, CardSubtitle, Table , Button} from "reactstrap";
 
+
 const tableData = [
   {
-    project: "MNIST Example",
+    name: "MNIST Example",
     status: "pending",
-    weeks: "35h",
+    duration: "35h",
   },
   {
-    project: "ChatGPT Deployment",
-    status: "done",
-    weeks: "12h",
+    name: "ChatGPT Deployment",
+    status: "Succeed",
+    duration: "12h",
   },
   {
-    project: "[Bert] Review Data Analysis",
-    status: "holt",
-    weeks: "1m",
+    name: "[Bert] Review Data Analysis",
+    status: "Running",
+    duration: "1m",
   },
 ];
 
@@ -31,9 +32,9 @@ const WorkflowTable = () => {
           <Table className="no-wrap mt-3 align-middle" responsive borderless>
             <thead>
               <tr>
-                <th>Project</th>
+                <th>Pipeline Name</th>
                 <th>Status</th>
-                <th>Times</th>
+                <th>Duration</th>
 
               </tr>
             </thead>
@@ -41,19 +42,19 @@ const WorkflowTable = () => {
               {tableData.map((tdata, index) => (
                 <tr key={index} className="border-top">
                   <td>
-                    <h6>{tdata.project}</h6>
+                    <h6>{tdata.name}</h6>
                     </td>
                   <td>
-                    {tdata.status === "pending" ? (
-                      <span className="p-2 bg-danger rounded-circle d-inline-block ms-3"></span>
-                    ) : tdata.status === "holt" ? (
+                    {tdata.status === "Succeed" ? (
+                      <span className="p-2 bg-success rounded-circle d-inline-block ms-3"></span>
+                    ) : tdata.status === "Running" ? (
                       <span className="p-2 bg-warning rounded-circle d-inline-block ms-3"></span>
                     ) : (
-                      <span className="p-2 bg-success rounded-circle d-inline-block ms-3"></span>
+                      <span className="p-2 bg-danger rounded-circle d-inline-block ms-3"></span>
                     )}
                   </td>
                   <td>
-                    <h6>{tdata.weeks}</h6>
+                    <h6>{tdata.duration}</h6>
                   </td>
                 </tr>
               ))}
