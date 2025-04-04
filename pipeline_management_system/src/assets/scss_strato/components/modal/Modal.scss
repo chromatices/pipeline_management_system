@@ -1,0 +1,16 @@
+.button-wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  .modal--cancel,
+  .modal--template {
+    background-color: transparent !important;
+    padding: 0;
+    min-width: 0;
+    opacity: 0.6;
+  }
+  .modal--template {
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,129 @@
+/**
+ * 기본 테이블의 스타일 입니다.
+ * 공통 스타일인 list-table과 같이 사용되고 있습니다.
+ * 
+ * scoped가 사용되지 않았습니다.
+ */
+
+.sp-data-table-pagination {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sp-data-table {
+  background-color: #f3f6f9 !important;
+  &.is-linked {
+    tr {
+      cursor: pointer;
+    }
+  }
+
+  table {
+    table-layout: fixed;
+  }
+
+  &.sp-data-table--check {
+    thead {
+      tr {
+        th {
+          &:first-child {
+            width: 10% !important;
+            .v-data-table__checkbox {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          &:first-child {
+            width: 10% !important;
+            .v-data-table__checkbox {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  .v-data-table__wrapper {
+    thead {
+      background-color: #cddfeb;
+      tr {
+        th {
+          &.w-0 {
+            display: none;
+          }
+          &.w-5 {
+            width: 5%;
+          }
+          &.w-10 {
+            width: 10%;
+          }
+          &.w-20 {
+            width: 20%;
+          }
+          &.w-25 {
+            width: 25%;
+          }
+          &.w-30 {
+            width: 30%;
+          }
+          &.w-40 {
+            width: 40%;
+          }
+          &.w-50 {
+            width: 50%;
+          }
+          &.w-60 {
+            width: 60%;
+          }
+          &.w-70 {
+            width: 70%;
+          }
+          &.w-80 {
+            width: 80%;
+          }
+          &.w-90 {
+            width: 90%;
+          }
+          &.w-100 {
+            width: 100%;
+          }
+          @include one-line-ellipsis(100%);
+          @include set-text(bold, 14, rgba($color: $sp-title, $alpha: 0.8));
+          border-bottom: 1px solid rgba($color: #fff, $alpha: 0.3) !important;
+          .v-simple-checkbox {
+            .v-icon {
+              color: $sp-teriary;
+            }
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        &:nth-child(odd) {
+          background-color: #fbfbfb;
+        }
+
+        &:nth-child(even) {
+          background-color: #fff;
+        }
+        td {
+          @include one-line-ellipsis(100%);
+          @include set-text(400, 15, rgba($color: #14142b, $alpha: 0.8));
+          border-bottom: 1px solid rgba($color: #707070, $alpha: 0.1) !important;
+          .v-simple-checkbox {
+            .v-icon {
+              color: $sp-teriary;
+            }
+          }
+        }
+      }
+    }
+  }
+}

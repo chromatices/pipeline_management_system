@@ -1,0 +1,29 @@
+@import '@/styles/_mixin.scss';
+.nav-my-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+  .user-name-wrapper {
+    margin-right: 15px;
+    font-weight: bold;
+    text-align: right;
+    white-space: nowrap;
+
+    .user-name {
+      text-align: right;
+    }
+    .user-name.fontWhite {
+      color: #fff;
+    }
+  }
+  .user-role-wrapper {
+    font-weight: 500;
+    opacity: 0.75;
+    font-size: toRem(12);
+    &.fontWhite {
+      color: #fff;
+    }
+  }
+}

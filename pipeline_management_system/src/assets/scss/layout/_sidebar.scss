@@ -1,0 +1,45 @@
+.sidebarArea {
+  flex-shrink: 0;
+  width: $sidebarWidth;
+  background-color: $sidebarColor;
+  min-height: 100vh; // 화면 전체 높이 보장
+  padding: 20px; // 내부 여백 추가
+
+  .sidenav-bg:hover {
+    background-color: $gray-100;
+    border-radius: $border-radius;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .sidebarArea {
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    z-index: 1;
+    margin-left: -$sidebarWidth;
+    transition: 0.15s ease-in;
+
+    &.showSidebar {
+      margin-left: 0px;
+    }
+  }
+}
+.sidebarNav {
+  .nav-link {
+    font-size: 1.0rem;
+    padding: 1rem 1.5rem;
+    transition: all 0.3s ease-in-out; // 부드러운 애니메이션
+
+    &.active-link {
+      background-color: $gray-200; // 선택된 메뉴의 배경색
+      font-weight: bold; // 선택된 메뉴 강조
+      border-radius: 8px; // 둥근 모서리 추가
+    }
+
+    &:hover {
+      background-color: $gray-100;
+      border-radius: 8px;
+    }
+  }
+}

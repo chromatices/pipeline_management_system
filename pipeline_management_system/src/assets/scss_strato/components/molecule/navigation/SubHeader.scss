@@ -1,0 +1,114 @@
+/**
+* GNB 영역
+* 로고, 프로젝트(서비스그룹) 목록, 로그인한 사용자의 정보
+*/
+
+@import '@/styles/_mixin.scss';
+.top-nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  width: 100%;
+  max-height: 68px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1c2536 0% 0% no-repeat padding-box;
+
+  .left-nav-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 480px;
+
+    .full-menu-btn {
+      width: 180px;
+
+      .burger-button {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .burger-icon {
+        background: #fff;
+        border-radius: 50%;
+        font-size: 18px;
+      }
+      .burger-text {
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+
+    .title-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      width: 300px;
+      font-weight: bold;
+      font-size: 2rem;
+      color: $title-color;
+
+      .logo-image {
+        max-width: 40px;
+        max-height: 40px;
+      }
+
+      .title-text {
+        color: #fff;
+        font-size: 1.15rem;
+        font-weight: bold;
+        white-space: nowrap;
+      }
+      .fav-button {
+        margin-right: 5px;
+        .v-icon {
+          font-size: 2.3rem;
+        }
+        .active {
+          color: $sp-warning;
+        }
+      }
+    }
+
+    .breadcrumbs-text {
+      font-size: toRem(13);
+      opacity: 0.6;
+    }
+  }
+  .pop-up-btn {
+    font-size: 0.9rem;
+  }
+
+  .service-btn {
+    background-color: $basic-button;
+  }
+  .right-nav-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    height: 100%;
+
+    .button-wrapper {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      min-width: 80px;
+      gap: 10px;
+
+      i {
+        font-size: toRem(30);
+      }
+
+      .image-wrapper {
+        width: 9%;
+      }
+    }
+  }
+}

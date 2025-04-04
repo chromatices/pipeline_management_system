@@ -1,0 +1,40 @@
+/**
+ * scoped가 사용되지 않았습니다.
+ */
+
+.sp-select {
+  // border-radius: 10px;
+  border-radius: 5px;
+
+  .v-input__control {
+    .v-input__slot {
+      min-height: 35px !important;
+    }
+  }
+  .v-select__slot {
+    .v-select__selections,
+    .v-label {
+      font-size: 0.8rem !important;
+    }
+  }
+
+  &.font-color {
+    &.lightGreen {
+      .v-label {
+        color: #00b8d5;
+      }
+      .v-select__selection {
+        color: #00b8d5;
+      }
+    }
+  }
+  &.icon-color {
+    &.lightGreen {
+      .v-input__icon {
+        svg {
+          color: #00b8d5;
+        }
+      }
+    }
+  }
+}

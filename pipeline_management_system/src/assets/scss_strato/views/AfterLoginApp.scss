@@ -1,0 +1,33 @@
+/**
+ * 로그인한 뒤의 메인 화면
+ *
+ * scoped가 사용되지 않았습니다.
+ */
+
+
+@import '@/styles/_mixin.scss';
+
+.main-wrapper {
+  // background-color: #fff;
+  background-color: #f3f6f9;
+  padding: 83px 15px 15px 315px !important;
+  height: 100vh;
+  @include desktop-small {
+    padding-left: 310px !important;
+  }
+  &.mini-lnb {
+    padding-left: 95px !important;
+  }
+  .sp-kubespray-page {
+    background-color: #f3f6f9 !important;
+  }
+  .v-tabs-items {
+    background-color: #f3f6f9 !important;
+  }
+  .v-tabs-bar {
+    background-color: #f3f6f9 !important;
+  }
+}
+.material-icons-outlined {
+  font-family: 'Material Icons Outlined';
+}

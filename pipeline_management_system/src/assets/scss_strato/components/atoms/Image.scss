@@ -1,0 +1,12 @@
+/**
+ * scoped가 사용되지 않았습니다.
+ */
+ 
+.sp-image {
+  &.with-btn {
+    .v-responsive__content {
+      width: 20px !important;
+      max-width: 100px;
+    }
+  }
+}

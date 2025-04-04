@@ -1,0 +1,15 @@
+.sp-main {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.my-info__button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .edit-button {
+    width: 112px;
+    color: $sp-teriary;
+  }
+}
+

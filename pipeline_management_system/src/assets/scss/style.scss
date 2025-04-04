@@ -1,0 +1,31 @@
+@import "variables";
+
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons.scss";
+@import "./layout/sidebar";
+@import "./layout/container";
+@import "./layout/input";
+@import "./layout/button";
+
+.title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    height: 68px;
+    font-weight: bold;
+    font-size: 2rem;
+    color: $title-color;
+
+    .logo-image {
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+    .title-text {
+        color: #fff;
+        font-size: 1.15rem;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+}

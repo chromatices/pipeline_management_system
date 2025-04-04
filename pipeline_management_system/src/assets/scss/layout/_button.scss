@@ -1,0 +1,92 @@
+/**
+ * scoped가 사용되지 않았습니다.
+ */
+ 
+.sp-button.v-btn {
+  text-transform: none !important;
+  font-weight: 500 !important;
+  font-size: 0.8rem !important;
+  border-radius: 5px !important;
+
+
+  &.border {
+    &.dark-gray-border {
+      background-color: #fff !important;
+      color: $basic-dark-button !important;
+      border: 1.5px solid $basic-dark-button !important;
+    }
+    &.gray-border {
+      background-color: #fff !important;
+      color: $basic-button !important;
+      border: 1.5px solid $basic-button !important;
+    }
+    &.blue-border {
+      background-color: #fff !important;
+      color: $nav-primary !important;
+      border: 1.5px solid $nav-primary;
+    }
+    &.primary-border {
+      background-color: #fff !important;
+      color: $sp-teriary !important;
+      border: 1.5px solid $sp-teriary !important;
+    }
+    &.light-gray-border {
+      background-color: #fff !important;
+      border: 1.5px solid $input-border !important;
+    }
+    &.green {
+      background-color: #fff !important;
+      color: $basic-green !important;
+      border: 1.5px solid $basic-green !important;
+    }
+    &.red {
+      background-color: #fff !important;
+      color: $sp-red !important;
+      border: 1.5px solid $sp-red !important;
+    }
+    &.dark-blue-border {
+      background-color: #fff !important;
+      color: $basic-button !important;
+      border: 1.5px solid $basic-button !important;
+      &:hover {
+        background-color: $sp-teriary !important;
+        color: #fff !important;
+      }
+    }
+
+    &.bw-2 {
+      border-width: thin !important;
+    }
+    &.bw-1 {
+      border-width: 1px !important;
+    }
+  }
+
+  &.backgroundColor {
+    &.transparent {
+      background-color: transparent !important;
+    }
+    &.gray-background {
+      background-color: $sub-title !important;
+    }
+    &.light-gray-background {
+      background-color: #f1f4f6 !important;
+    }
+    &.primary-background {
+      background-color: $sp-teriary !important;
+    }
+  }
+
+  &.modal {
+    width: 150px;
+    background-color: #fff !important;
+    &.close {
+      color: $sub-title !important;
+      border: 1px solid $sub-title;
+    }
+    &.apply {
+      color: $nav-primary !important;
+      border: 1px solid $nav-primary;
+    }
+  }
+}
